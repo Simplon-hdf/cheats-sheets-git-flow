@@ -10,7 +10,7 @@ Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et Gi
 ### Création du projet
 ___
 
-Après avoir [installé](linkTBA) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
+Après avoir [installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
 
 ```
 git init
@@ -149,7 +149,7 @@ Satsifait avec le site photo d'Alex, le duo decide d'entamer un travail sur un a
 
 ### Création du projet
 ___
-Cette fois, et avec Git-Flow [installé](linkTBA), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
+Cette fois, et avec Git-Flow [installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
 ```
 git flow init
 ```
@@ -195,5 +195,5 @@ De cette façon, ils peuvent se transmettre le travail en cours d'une feature sa
 
 
 <!----------- REF
-[installé](linkTBA)
+[installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md)
 ----------->
