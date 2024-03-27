@@ -194,6 +194,6 @@ git flow feature pull origin transaction
 De cette façon, ils peuvent se transmettre le travail en cours d'une feature sans necessairement la **merge** sur leur _develop_.
 
 
-<REF-----------
+<!----------- REF
 [installé](linkTBA)
 ----------->
