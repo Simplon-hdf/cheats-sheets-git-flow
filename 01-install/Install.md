@@ -47,14 +47,12 @@ macOS :
 git --version
 ````
 
-S’il n’est pas déjà installé, il vous demandera de le faire.
-Vous pouvez également télécharger l’installateur binaire depuis le site web de Git ou l’installer via GitHub for macOS.
+- S’il n’est pas déjà installé, il vous demandera de le faire.
+Vous pouvez également télécharger l’installateur binaire depuis le site web de Git ou l’installer via GitHub [for macOS.](https://git-scm.com/download/mac)
 
 Windows :
 
-- Téléchargez l’application officielle depuis le site web de Git.
-
-    https://git-scm.com/downloads
+- [Téléchargez l’application officielle depuis le site web de Git.](https://git-scm.com/downloads)
 
 - [Git Desktop](https://git-scm.com/downloads) : Cet outil est une version desktop qui permet de suivre l’historique des versions de code. Il est aussi une interface graphique pour Git Desktop.
 
@@ -66,11 +64,11 @@ Vous pouvez également utiliser le paquet Chocolatey Git pour une installation a
 Une autre option est d’installer GitHub for Windows, qui inclut une version en ligne de commande avec une interface graphique.
 N’hésitez pas à choisir la méthode qui convient le mieux à votre système et à vos préférences ! 🚀
 
-plus d'info sur git et giflow une petite doc...
+- plus d'informations complémentaires sur git et giflow :
 
 https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-rssnx5gejir56aw
 
-une petite video de 5 min pour comprendre git...
+- une petite video de 5 min pour comprendre git...
 
 https://youtu.be/gGKZLfPYORs?si=5ErR7YGKXLe5HRxX
 
@@ -82,7 +80,7 @@ https://youtu.be/gGKZLfPYORs?si=5ErR7YGKXLe5HRxX
 
 - GitFlow est un modèle de gestion des branches Git qui facilite l’organisation du cycle de développement d’un projet. Voici comment l’installer et l’utiliser :
 
-Installation :
+# Installation 
 
 - Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà installé sur votre système.
 
@@ -104,13 +102,11 @@ port install git-flow-avh
 
 Sur Windows :
 
-- Utilisez GitFlow pour Windows :
+- Utilisez [GitFlow pour Windows](https://github.com/nvie/gitflow/wiki/Windows)
 
-    https://github.com/nvie/gitflow/wiki/Windows
+- Utilisez GitFlow pour [Windows avec Git Bash](https://github.com/nvie/gitflow/wiki/Windows-Git-Bash)
 
-- Utilisez GitFlow pour Windows avec Git Bash :
-
-    https://github.com/nvie/gitflow/wiki/Windows-Git-Bash
+    
 
 Sur Linux :
 
@@ -166,6 +162,3 @@ git flow hotfix finish <version>
 
 En utilisant ces commandes, vous pourrez gérer efficacement votre flux de travail avec GitFlow. 🚀 
 En suivant ces étapes, vous pourrez utiliser GitFlow efficacement pour gérer vos versions et collaborer en équipe. 🚀 
-
-<a href='https://www.linkedin.com/in/jonathan-gorczyca-8157932a7/'>
-        <img src='https://img.shields.io/badge/linkedin-darkblue'>
