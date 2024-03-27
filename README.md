@@ -1,4 +1,4 @@
-<p style="align:center"><img src="https://git-scm.com/images/logos/1color-lightbg@2x.png"/><p>
+<p align="center"><img src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"/><p>
 
 # Documentation git et gitflow
 
@@ -14,7 +14,7 @@
     </thead>
     <tbody>
         <tr>
-            <th colspan="3">Setup & Init</th>
+            <th colspan="3" align="left">Setup & Init</th>
         </tr>
         <tr>
             <td></td>
@@ -28,7 +28,7 @@
         </tr>
         <tr>
         <tr>
-            <th colspan="3">Staging</th>
+            <th colspan="3" align="left">Staging</th>
         </tr>
             <td></td>
             <td><code>git status</code></td>
@@ -65,7 +65,7 @@
             <td>Effectue le commit contenant les fichiers en staging</td>
         </tr>
         <tr>
-            <th colspan="3">Branches</th>
+            <th colspan="3" align="left">Branches</th>
         </tr>
         <tr>
             <td></td>
@@ -98,7 +98,7 @@
             </tr>
         </tr>
         <tr>
-            <th colspan="3">Historique</th> 
+            <th colspan="3" align="left">Historique</th> 
         </tr>
         <tr>
             <td></td>
@@ -116,7 +116,7 @@
             <td>Affiche l'historique des modifications, y compris l'auteur sur un fichier spécifique</td>
         </tr>
         <tr>
-            <th colspan="3">Mise à jour et publication</th>
+            <th colspan="3" align="left">Mise à jour et publication</th>
         </tr>
         <tr>
             <td></td>
@@ -149,7 +149,7 @@
             <td>Poussant ses modifications sur la branche au repo distant</td>
         </tr>
         <tr>
-            <th colspan="3">Merge & Rebase</th>
+            <th colspan="3" align="left">Merge & Rebase</th>
         </tr>
         <tr>
             <td></td>
@@ -177,7 +177,7 @@
             <td>Ouvre un outil de merge pour résoudre les conflits</td>
         </tr>
         <tr>
-            <th colspan="3">Rétablir/Annuler</th>
+            <th colspan="3" align="left"    >Rétablir/Annuler</th>
         </tr>
         <tr>
             <td></td>
