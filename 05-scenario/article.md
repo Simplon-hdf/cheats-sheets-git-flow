@@ -1,16 +1,16 @@
 # A quoi ça ressemble, en situation?
 
-## Git-ing
+## Utiliser Git
 ___
-### cas
-___
-
-Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et GitHub pour pouvoir reçevoir de l'aide de son ami Béa.  
-
-### creation
+### Le brief
 ___
 
-Après avoir [installé] Git sur son terminal et fait sa configuration, Alex crée un dossier "site-(thême)", dans lequel il génère un _repository_ local Git grace à la commande:
+Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et GitHub pour pouvoir reçevoir de l'aide de son ami Béa, qui va réaliser les élements interractifs du site.  
+
+### Création du projet
+___
+
+Après avoir [installé](linkTBA) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
 
 ```
 git init
@@ -18,7 +18,7 @@ git init
 
 Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).
 
-\\\ screenshot GitHub clé SSH
+\\ screenshot GitHub clé SSH
 
 Pour faire ça, avec le dossier courant ouvert dans le Terminal, il inscrit la commande:
 
@@ -36,7 +36,7 @@ Il crée un fichier README.md dans le _repository_ qu'il rédige pour communique
 ```
 git status
 ``` 
-il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est ni tracké, et que ses changements ne sont pas mis dans la zone de _staging_. 
+il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_. 
 \\ sc untracked README.md 
 
 Il règle ça avec la commande:
@@ -50,19 +50,20 @@ Pour valider les changements du nouveau fichier README.md, A utilise:
 ```
 git commit -m "docs: created README.md and wrote its contents"
 ```
-La commande inscrit ainsi dans l'historique du _repository_ git que Alex à crée et modifié le fichier README.md à la racine du _repository_ "site-(thême)".  
+La commande inscrit ainsi dans l'historique du _repository_ git que Alex à crée et modifié le fichier README.md à la racine du _repository_ "site-photo".  
 
 A souhaite maintenant porter ces changements, et l'état actuel de son _repo_ local vers son _repo_ distant GitHub. En utilisant:
 ```
 git push origin main
 ```
-il "pousse" l'état du projet vers le _repo_ distant défini comme _origin_, décrit par l'historique des modifications incrit par chaque commit (dans ce cas, un seul commit, contenant comme modifications la création d'un fichier et le changement de son contenu).  
+il "pousse" l'état du projet vers le _repo_ distant défini comme _origin_, décrit par l'historique des modifications incrit par chaque commit (dans ce cas, un seul commit, contenant comme modifications la création d'un fichier et le changement de son contenu), sur la branche _main_.  
 Sur GitHub, s'il actualise maintenant la page du _repo_ distant, il peut voir que le fichier README.md est bien présent.  
+\\ sc github updaté
 
 Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le repo à Béa facilement, en lui transmettant le lien du _repo_ GitHub.  
 
 
-### recupération
+### Récupération du projet par un collaborateur
 ___
 
 Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé. 
@@ -77,55 +78,116 @@ Elle doit maintenant rattacher son local au _repo_ d'Alex, afin de pouvoir facil
 ```
 git remote add upstream [SSHAlex]
 ```
+Elle est désormais prête à travailler.
 
-### Working
+### Travailler ensemble
 
-She decides to make a branch to work on the menu.
-git branch menu
+Pour travailler sur le menu du site, Béa crée une **branche**.
+```
+git branch -c menu
 git switch branch menu
+```
 
-She's now in a branch, all changes that she makes here won't appear on the main branch, or any other branch that she makes. She can work peacefully on the menu. 
-Once she's done, she realises Alex made some changes to the project.
+Elle se trouve désormais dans la branche _menu_, sa branche _main_ restera inaffectée par tout changement qu'elle effectue sur la branche _menu_.  
+Après avoir travaillé un moment, elle se rends compte qu'Alex à **push** des changements. Elle doit les recupérer.  
+```
+git fetch origin main
+```
 
-Béa needs to retrieve the changes.
-git fetch
-check for conflict, there are none with the main branch.
+Elle vérifie s'il y a des conflits. N'ayant pas travaillé sur la branche _main_, il n'y en a pas. Elle peut donc **merge**.
+```
 git merge
+```
 
-She now has to merge the menu branch with the main branch to add the feature she worked on to the project.
-git merge (branches)
+Lorsque son travail sur le menu est terminé, elle doit maintenant **merge** la branche _menu_ sur sa _main_.  
+Elle se deplace dans la branche _main_, celle sur laquelle elle veut porter les changements de sa branche.
 
-With Alex's change, one file now triggers a conflict when trying to merge her branch
-//sc conflict
+```
+git switch branch main
+git merge menu
+```
 
-The conflict message tells her where the conflict is found, so she can go and fix the conflict however she sees fit. Once that is done, she just needs to run a regular **commit** of the now fixed conflicted file.
-git add
-git commit
+Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.
+// sc conflict
 
-The feature is now integrated into her local _repo_'s main branch. She tests it out, and all is working well. She can delete the branch that now served its purpose.
-delete branch
+Le message l'informe d'où trouver le conflit. Béa n'a qu'a se rendre dans le fichier affecté et corriger le conflit, puis **commit** la correction.
+```
+git add [fichier]
+git commit -m "feat: added Menu  
 
-All she has to do now is push her changes to her own remote github _repo_
+Fixed conflict with [file]"
+```
+
+Le menu est maintenant intégré à son _repo_. Elle teste le code, et tout fonctionne bien. Elle peut maintenant supprimer la branche _menu_
+```
+delete branch menu
+```
+
+Elle n'a plus qu'à **push** ses changements sur son _repo_ distant.
+```
 git push origin main
+```
 
-Now on github, since that repo is forked, it'll detect that she made changes, and offer she makes a PULL REQUEST. That will allow her to show her work to Alex, and ask him to retrieve them and apply them to his main branch.
+Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_.
 
 \\sc pull request
 
-She properly fills out the PR with details of her work, and sends out the request.
+Elle remplit le formulaire de Pull Request en renseignant le changement qu'elle à réalisé, puis l'envoie à Alex.  
 
-Alex now can see her pull request, and can review the changes she made. It's up to him now to accept the changes and integrate them to his repo, or emmit an issue with them for her to fix. In the meantime, Béa can work on other features, and so can Alex.
+Alex, lui, peut désormais voir le **pull request** de Béa, et vérifier les changements qu'elle à réalisé. C'est à lui de **review** le code de Béa, et de choisir s'il l'accepte et l'intègre au sien, s'il pose des **issues** pour qu'elle modifie des points de son code, ou s'il le refuse.  
 
-## With Git-Flow
+Il peuvent de cette façon travailler sur différentes features en parrallèle, jusqu'à ce que leur site soit "terminé".
 
-Alex and Béa are content with their website, they now want to make another one for Béa's business. This time, Béa suggests they use Git-Flow.
+## Utiliser Git Flow
+___
+### Le brief
 
-Once more, Alex creates both local and remote repos, but this time, after his **git init**, he also uses
+Satsifait avec le site photo d'Alex, le duo decide d'entamer un travail sur un autre site, cette fois pour faire une boutique en ligne pour le commerce de Béa. Cette dernière suggère d'utiliser Git-Flow pour ce projet, afin de fluidifier le processus de branches.  
+
+### Création du projet
+Cette fois, et avec Git-Flow [installé](linkTBA), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
 ```
 git flow init
 ```
-which creates branches beyond the main. A develop, which will be used to push changes to their own remote repos, and tags for future branches to classify them between features, hotfixes, and release branches. 
+ce dernier crée des branches en plus de la main, notamment _develop_ sur laquelle il déplace automatiquement Alex pour en faire le _working directory_, mais configure en plus des préfixes de nomenclature pour les branches selon leur fonction: _feature_ pour des fonctionalités, _hotfix_ pour la réparation de bugs, _release_ pour le déployage de nouvelles versions en ligne.  
+
+Après avoir **fork** et **clone** le projet, Béa devra cette fois aussi entrer la commande **git flow init**.
+
+### Travailler ensemble
+
+Avec cet outil, au lieu de crée une branche via la commande Git, Alex et Béa utiliseront la commande Git Flow, par exemple pour créer le _header_ du site:
+```
+git flow feature start header
+```
+
+Git-flow crée alors automatiquement une branche **feature/header** sur laquelle elle déplace l'utilisateur.  
+Une fois le travail de la branche terminé, entrer
+```
+git flow feature finish header
+```
+merge la branche sur le **develop**, et supprime la branche de feature.  
+
+En faisant le **merge** du header, Alex à créé un bug, pour le résoudre il crée une branche de **hotfix**
+```
+git flow hotfix start bug_header
+```
+
+Il pourra regler le bug, et merge la branche de la même façon qu'une branche de feature.  
+
+Pendant son travail sur la page de transaction, Béa rencontre un problème pour lequel elle à besoin de l'aide d'Alex. Elle peut simplement partager sa branch feature/transaction avec
+
+```
+git flow feature publish transaction
+```
+
+La branche est désormais disponible pour Alex sur le _repo_ distant, il peut la récuperer en local via:
+```
+git flow feature pull origin transaction
+```
+
+De cette façon, ils peuvent se transmettre le travail en cours d'une feature sans necessairement la **merge** sur leur _develop_.
 
 
-<REF---------------------->
-[installé]
+<REF-----------
+[installé](linkTBA)
+----------->
