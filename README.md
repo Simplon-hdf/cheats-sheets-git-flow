@@ -1,6 +1,23 @@
 <p align="center"><img src="https://git-scm.com/images/logos/1color-lightbg@2x.png"/><p>
 
-# Cheat sheet Git
+# Git
+
+Git est un système de contrôle de version qui trace les changements dans le code source.
+
+- Il utilise des dépôts pour stocker des instantanés complets du projet à chaque commit.
+
+- Les branches permettent de travailler sur des versions distinctes du code. Les commits enregistrent les modifications avec des messages descriptifs.
+
+- Git conserve un historique complet des changements pour suivre l'évolution du projet.
+
+## Table des matières
+
+<ul>
+    <li><a href="./01-install/Install.md">Installation</a></li>
+    <li><a href="./05-scenario/article.md">Utiliser Git</a></li>
+</ul>
+
+## Cheat sheet
 
 <table>
     <thead>
