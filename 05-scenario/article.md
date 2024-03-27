@@ -16,7 +16,7 @@ Après avoir [installé](linkTBA) Git sur son terminal et fait sa configuration,
 git init
 ```
 
-Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).
+Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).  
 
 \\ screenshot GitHub clé SSH
 
@@ -36,14 +36,14 @@ Il crée un fichier README.md dans le _repository_ qu'il rédige pour communique
 ```
 git status
 ``` 
-il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_. 
+il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
 \\ sc untracked README.md 
 
 Il règle ça avec la commande:
 ```
 git add README.md
 ```
-Le fichier est désormais dans le _staging_, Alex peut verifier ça en remandant un **git status**, ou **gst** pour aller plus vite.
+Le fichier est désormais dans le _staging_, Alex peut verifier ça en remandant un **git status**, ou **gst** pour aller plus vite.  
 \\sc gst now added
 
 Pour valider les changements du nouveau fichier README.md, A utilise:
@@ -66,7 +66,7 @@ Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut main
 ### Récupération du projet par un collaborateur
 ___
 
-Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé. 
+Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé.  
 \\ sc GitHub fork et clé SSH
 
 Dans son Terminal sur son ordinateur, elle tape:
@@ -81,6 +81,7 @@ git remote add upstream [SSHAlex]
 Elle est désormais prête à travailler.
 
 ### Travailler ensemble
+___
 
 Pour travailler sur le menu du site, Béa crée une **branche**.
 ```
@@ -107,8 +108,8 @@ git switch branch main
 git merge menu
 ```
 
-Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.
-// sc conflict
+Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.  
+\\\ sc conflict
 
 Le message l'informe d'où trouver le conflit. Béa n'a qu'a se rendre dans le fichier affecté et corriger le conflit, puis **commit** la correction.
 ```
@@ -128,23 +129,26 @@ Elle n'a plus qu'à **push** ses changements sur son _repo_ distant.
 git push origin main
 ```
 
-Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_.
+Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_.  
 
-\\sc pull request
+\\\ sc pull request
 
 Elle remplit le formulaire de Pull Request en renseignant le changement qu'elle à réalisé, puis l'envoie à Alex.  
 
 Alex, lui, peut désormais voir le **pull request** de Béa, et vérifier les changements qu'elle à réalisé. C'est à lui de **review** le code de Béa, et de choisir s'il l'accepte et l'intègre au sien, s'il pose des **issues** pour qu'elle modifie des points de son code, ou s'il le refuse.  
 
-Il peuvent de cette façon travailler sur différentes features en parrallèle, jusqu'à ce que leur site soit "terminé".
+Il peuvent de cette façon travailler sur différentes features en parrallèle, jusqu'à ce que leur site soit "terminé".  
+
 
 ## Utiliser Git Flow
 ___
 ### Le brief
+___
 
 Satsifait avec le site photo d'Alex, le duo decide d'entamer un travail sur un autre site, cette fois pour faire une boutique en ligne pour le commerce de Béa. Cette dernière suggère d'utiliser Git-Flow pour ce projet, afin de fluidifier le processus de branches.  
 
 ### Création du projet
+___
 Cette fois, et avec Git-Flow [installé](linkTBA), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
 ```
 git flow init
@@ -153,7 +157,9 @@ ce dernier crée des branches en plus de la main, notamment _develop_ sur laquel
 
 Après avoir **fork** et **clone** le projet, Béa devra cette fois aussi entrer la commande **git flow init**.
 
+
 ### Travailler ensemble
+___
 
 Avec cet outil, au lieu de crée une branche via la commande Git, Alex et Béa utiliseront la commande Git Flow, par exemple pour créer le _header_ du site:
 ```
