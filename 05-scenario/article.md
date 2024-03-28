@@ -18,7 +18,7 @@ git init
 
 Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).  
 
-[cleSSHAlex](https://github.com/AlexPh0tograph/site-photo/blob/main/img/01SSH.jpg)
+![cleSSHAlex](https://github.com/AlexPh0tograph/site-photo/blob/main/img/01SSH.jpg)
 
 Pour faire ça, avec le dossier courant ouvert dans le Terminal, il inscrit la commande:
 
