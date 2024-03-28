@@ -1,5 +1,5 @@
 ![Logo git](https://git-scm.com/images/logos/1color-lightbg@2x.png)
-
+____
 # Introduction
 
 - Git est un système de contrôle de version largement utilisé aujourd’hui. Il a été initialement développé en 2005 par Linus Torvalds, le créateur du noyau du système d’exploitation Linux. De nombreux projets logiciels, qu’ils soient commerciaux ou open source, reposent sur Git pour le contrôle de version.
@@ -73,8 +73,7 @@ https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-
 https://youtu.be/gGKZLfPYORs?si=5ErR7YGKXLe5HRxX
 
 ![Logo gitflow](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png)
-----
-----
+___
 
 # Introduction
 
