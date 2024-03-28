@@ -15,7 +15,7 @@ Les trois objectifs clés de Git sont les suivants :
 - **_Performances_** : Git est optimisé pour des actions telles que les commits, les branches, les fusions et les comparaisons de versions. Ses algorithmes exploitent une connaissance approfondie des attributs courants des arborescences de fichiers de code source réel.
   Sécurité : Git se concentre sur le contenu des fichiers plutôt que sur leurs noms, ce qui le rend plus robuste face aux renommages fréquents.
 
-- **_Collaboration_** : Git permet de travailler avec d’autres utilisateurs à l’aide de branches, de branches, de branches, de branches, de branches. Il permet également de travailler en équipe sur des projets à plusieurs développeurs.
+- **_Collaboration_** : Git permet de travailler avec d’autres utilisateurs à l’aide de branches. Il permet également de travailler en équipe sur des projets à plusieurs développeurs.
 
 - **_Flexibilité_** : Git s’adapte à divers environnements de développement et systèmes d’exploitation.
 
