@@ -10,7 +10,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
 
 - Git conserve un historique complet des changements pour suivre l'évolution du projet.
 
-## Table des matières
+## Index
 
 <ul>
     <li><a href="./git/02-install/install.md">Installation</a></li>

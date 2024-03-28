@@ -37,7 +37,11 @@ Sur Linux :
 - Utilisez votre gestionnaire de paquets yum install
 
 ```
-sudo yum install git-flow ou sudo apt-get install git-flow
+sudo yum install git-flow
+```
+
+```
+sudo apt-get install git-flow
 ```
 
 Initialisation :
