@@ -30,7 +30,7 @@ Sur Windows :
 
 - Utilisez [GitFlow pour Windows](https://github.com/nvie/gitflow/wiki/Windows)
 
-- Utilisez GitFlow pour [Windows avec Git Bash](https://git-scm.com/downloads)
+- Utilisez GitFlow pour [Windows avec Git Bash](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Gitflow-Windows-Install-Git-Flow-Installation)
 
 Sur Linux :
 
