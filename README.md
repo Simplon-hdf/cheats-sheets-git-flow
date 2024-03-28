@@ -1,4 +1,4 @@
-<p align="center"><img src="https://git-scm.com/images/logos/1color-lightbg@2x.png"/><p>
+<p align="center"><img width="600"src="./images/git-logo.png"/><p>
 
 # Git
 
@@ -88,7 +88,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git branch -d [branche]</code></td>
-            <td>Supprime la branche local</td>
+            <td>Supprime la branche locale</td>
         </tr>
         <tr>
             <td align="right"><code>git checkout --track</code></td>
