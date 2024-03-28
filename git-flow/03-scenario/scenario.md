@@ -3,11 +3,11 @@
 ### Le brief
 ___
 
-Satsifait avec le [site photo d'Alex](/git/05-scenario/article.md), le duo decide d'entamer un travail sur un autre site, cette fois pour faire une boutique en ligne pour le commerce de Béa. Cette dernière suggère d'utiliser Git-Flow pour ce projet, afin de fluidifier le processus de branches.  
+Satsifait avec le [site photo d'Alex](/git/03-scenario/article.md), le duo decide d'entamer un travail sur un autre site, cette fois pour faire une boutique en ligne pour le commerce de Béa. Cette dernière suggère d'utiliser Git-Flow pour ce projet, afin de fluidifier le processus de branches.  
 
 ### Création du projet
 ___
-Cette fois, et avec Git-Flow [installé](/git-flow/install/install.md), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
+Cette fois, et avec Git-Flow [installé](/git-flow/02-install/install.md), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
 ```
 git flow init
 ```
