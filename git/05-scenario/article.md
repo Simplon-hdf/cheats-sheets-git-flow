@@ -10,7 +10,7 @@ Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et Gi
 ### Création du projet
 ___
 
-Après avoir [installé](linkTBA) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
+Après avoir [installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
 
 ```
 git init
@@ -18,7 +18,7 @@ git init
 
 Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).  
 
-\\ screenshot GitHub clé SSH
+![cleSSHAlex](https://github.com/AlexPh0tograph/site-photo/blob/main/img/01SSH.jpg)
 
 Pour faire ça, avec le dossier courant ouvert dans le Terminal, il inscrit la commande:
 
@@ -32,12 +32,14 @@ Il vérifie ensuite que la connection est bien établie avec:
 git remote -v
 ```
 
+![remoteCorrect](https://github.com/AlexPh0tograph/site-photo/blob/main/img/02REMOTE.jpg)
+
 Il crée un fichier README.md dans le _repository_ qu'il rédige pour communiquer les tenants de son projets. Avec la commande:
 ```
 git status
 ``` 
 il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
-\\ sc untracked README.md 
+![untracked](https://github.com/AlexPh0tograph/site-photo/blob/main/img/03UNTRACKED.jpg)
 
 Il règle ça avec la commande:
 ```
@@ -149,7 +151,7 @@ Satsifait avec le site photo d'Alex, le duo decide d'entamer un travail sur un a
 
 ### Création du projet
 ___
-Cette fois, et avec Git-Flow [installé](linkTBA), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
+Cette fois, et avec Git-Flow [installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md), après avoir fait son **git init**, Alex initialise en plus un _repo_ Git-Flow
 ```
 git flow init
 ```
@@ -195,5 +197,5 @@ De cette façon, ils peuvent se transmettre le travail en cours d'une feature sa
 
 
 <!----------- REF
-[installé](linkTBA)
+[installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md)
 ----------->
