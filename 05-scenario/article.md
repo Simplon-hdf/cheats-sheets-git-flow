@@ -32,12 +32,14 @@ Il vérifie ensuite que la connection est bien établie avec:
 git remote -v
 ```
 
+![remoteCorrect](https://github.com/AlexPh0tograph/site-photo/blob/main/img/02REMOTE.jpg)
+
 Il crée un fichier README.md dans le _repository_ qu'il rédige pour communiquer les tenants de son projets. Avec la commande:
 ```
 git status
 ``` 
 il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
-\\ sc untracked README.md 
+![untracked](https://github.com/AlexPh0tograph/site-photo/blob/main/img/03UNTRACKED.jpg)
 
 Il règle ça avec la commande:
 ```
