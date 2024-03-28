@@ -33,8 +33,6 @@ git --version
 
 Windows :
 
-- [Téléchargez l’application officielle depuis le site web de Git.](https://git-scm.com/downloads)
-
 - [Git Desktop](https://git-scm.com/downloads) : Cet outil est une version desktop qui permet de suivre l’historique des versions de code. Il est aussi une interface graphique pour Git Desktop.
 
 - [Git Bash](https://git-scm.com/downloads) : Git Bash est une interface de ligne de commande qui permet de suivre l’historique des versions de code. Il est aussi une interface graphique pour Git Bash.
