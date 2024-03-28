@@ -1,6 +1,6 @@
 <p align="center"><img width="600"src="../../images/git-logo.png"/><p>
 
-# About Git
+# À propos de Git
 
 Git est un système de contrôle de version largement utilisé aujourd’hui. Il a été initialement développé en 2005 par Linus Torvalds, le créateur du noyau du système d’exploitation Linux. De nombreux projets logiciels, qu’ils soient commerciaux ou open source, reposent sur Git pour le contrôle de version.
 
