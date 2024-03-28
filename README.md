@@ -1,4 +1,4 @@
-<p align="center"><img src="https://git-scm.com/images/logos/1color-lightbg@2x.png"/><p>
+<p align="center"><img src="./images/git-logo.png"/><p>
 
 # Git
 
