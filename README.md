@@ -88,7 +88,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git branch -d [branche]</code></td>
-            <td>Supprime la branche local</td>
+            <td>Supprime la branche locale</td>
         </tr>
         <tr>
             <td align="right"><code>git checkout --track</code></td>
