@@ -1,4 +1,4 @@
-![Logo git](https://git-scm.com/images/logos/1color-lightbg@2x.png)
+<p align="center"><img width="600"src="../../images/git-logo.png"/><p>
 
 # Comment installer git ?
 

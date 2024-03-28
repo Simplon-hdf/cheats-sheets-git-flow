@@ -15,8 +15,9 @@ Git est un système de contrôle de version qui trace les changements dans le co
 <ul>
     <li><a href="./git/02-install/install.md">Installation</a></li>
     <li><a href="./git/03-scenario/article.md">Utiliser Git</a></li>
-    <li><a href="./git/01-about-git/about-git.md">More about Git</a></li>
+    <li><a href="./git/01-about-git/about-git.md">À propos de Git</a></li>
     <li><a href="./git-flow/README.md">Git-Flow</a></li>
+    <li><a href="./convention-commit/convention.md">Convention de commit</a></li>
 </ul>
 
 ## Cheat sheet
