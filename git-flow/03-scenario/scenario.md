@@ -62,7 +62,3 @@ git flow feature pull origin transaction
 ```
 
 De cette façon, ils peuvent se transmettre le travail en cours d'une feature sans necessairement la **merge** sur leur _develop_.
-
-<!----------- REF
-[installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md)
------------>
