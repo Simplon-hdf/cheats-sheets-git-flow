@@ -38,15 +38,18 @@ Il crée un fichier README.md dans le _repository_ qu'il rédige pour communique
 ```
 git status
 ``` 
-il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est npas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
+il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est pas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
 ![untracked](https://github.com/AlexPh0tograph/site-photo/blob/main/img/03UNTRACKED.jpg)
 
 Il règle ça avec la commande:
 ```
 git add README.md
 ```
-Le fichier est désormais dans le _staging_, Alex peut verifier ça en remandant un **git status**, ou **gst** pour aller plus vite.  
-\\sc gst now added
+Le fichier est désormais dans le _staging_, Alex peut verifier ça en remandant un **git status**,  
+<!-- sc gst now added -->
+
+> [!TIP]
+> **gst** est un alias de **git status**, avec 7 caractères en moins à taper !
 
 Pour valider les changements du nouveau fichier README.md, A utilise:
 ```
@@ -60,7 +63,7 @@ git push origin main
 ```
 il "pousse" l'état du projet vers le _repo_ distant défini comme _origin_, décrit par l'historique des modifications incrit par chaque commit (dans ce cas, un seul commit, contenant comme modifications la création d'un fichier et le changement de son contenu), sur la branche _main_.  
 Sur GitHub, s'il actualise maintenant la page du _repo_ distant, il peut voir que le fichier README.md est bien présent.  
-\\ sc github updaté
+<!-- sc github updaté -->
 
 Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le repo à Béa facilement, en lui transmettant le lien du _repo_ GitHub.  
 
@@ -69,7 +72,7 @@ Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut main
 ___
 
 Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé.  
-\\ sc GitHub fork et clé SSH
+<!-- sc GitHub fork et clé SSH -->
 
 Dans son Terminal sur son ordinateur, elle tape:
 ```
@@ -111,7 +114,7 @@ git merge menu
 ```
 
 Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.  
-\\\ sc conflict
+<!--  sc conflict -->
 
 Le message l'informe d'où trouver le conflit. Béa n'a qu'a se rendre dans le fichier affecté et corriger le conflit, puis **commit** la correction.
 ```
@@ -133,7 +136,7 @@ git push origin main
 
 Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_.  
 
-\\\ sc pull request
+<!--- sc pull request --> 
 
 Elle remplit le formulaire de Pull Request en renseignant le changement qu'elle à réalisé, puis l'envoie à Alex.  
 
