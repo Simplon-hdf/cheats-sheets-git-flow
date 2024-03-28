@@ -6,7 +6,8 @@
 
 <ul>
     <li><a href="./02-install/install.md">Installation</a></li>
-    <li><a href="./03-scenario/scenario.md">Utiliser Git-Flow</a></li>
+    <li><a href="./01-about-gitflow/about-gitflow.md">À propos de Git flow</a></li>
+    <li><a href="./03-scenario/scenario.md">Utiliser Git flow</a></li>
 </ul>
 
 ## Cheat sheet
