@@ -2,7 +2,7 @@
 
 # Git-Flow
 
-## Table des matières
+## Index
 
 <ul>
     <li><a href="./02-install/install.md">Installation</a></li>
