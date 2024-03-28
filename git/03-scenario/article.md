@@ -8,7 +8,7 @@ Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et Gi
 ### Création du projet
 ___
 
-Après avoir [installé](/git/01-install/install.md) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
+Après avoir [installé](/git/02-install/install.md) Git sur son terminal et fait sa configuration, Alex crée un dossier "site-photo", dans lequel il génère un _repository_ local Git grace à la commande:
 
 ```
 git init
