@@ -66,7 +66,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git diff [branche locale] [branche distante]</code></td>
-            <td>Compare les différences entre une brancge locale et distante</td>
+            <td>Compare les différences entre une branche locale et distante</td>
         </tr>
         <tr>
             <td align="right"><code>git commit -m [message]</code></td>
@@ -77,7 +77,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git branch -av</code></td>
-            <td>Liste vos branches. Un * apparaitra à coté de la branche actuelle</td>
+            <td>Liste les branches. Un * apparaitra à coté de la branche actuelle</td>
         </tr>
         <tr>
             <td align="right"><code>git branch [branche]</code></td>
