@@ -76,7 +76,7 @@ Sur GitHub, s'il actualise maintenant la page du _dépôt_ distant, il peut voir
 
 ![pushed](/images/03-scenario/05PUSH.jpg)
 
-Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le _dépôt à Béa facilement, en lui transmettant le lien du _dépôt_ GitHub.
+Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le _dépôt_ à Béa facilement, en lui transmettant le lien du _dépôt_ GitHub.
 
 ### Récupération du projet par un collaborateur
 
