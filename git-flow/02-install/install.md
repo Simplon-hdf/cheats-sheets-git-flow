@@ -8,9 +8,9 @@
 
 ## Table des matières
 
-    - [MacOS](#sur-macos)
-    - [Windows](#sur-windows)
-    - [Linux](#sur-linux)
+[MacOS](#sur-macos)
+[Windows](#sur-windows)
+[Linux](#sur-linux)
 
 ## Installation
 
