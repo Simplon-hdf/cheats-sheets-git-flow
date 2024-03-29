@@ -20,7 +20,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
     <li><a href="./convention-commit/convention.md">Convention de commit</a></li>
 </ul>
 
-## Cheat sheet
+## Cheat Sheet
 
 <table>
     <thead>
