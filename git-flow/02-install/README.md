@@ -2,21 +2,27 @@
 
 ---
 
-# Introduction
+## Introduction
 
 - GitFlow est un modèle de gestion des branches Git qui facilite l’organisation du cycle de développement d’un projet. Voici comment l’installer et l’utiliser :
 
-# Installation
+## Table des matières
 
-- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install/install.md">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
+[MacOS](#sur-macos)  
+[Windows](#sur-windows)  
+[Linux](#sur-linux)
 
-````
+## Installation
+
+- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
+
+```
 git version
-````
+```
 
 - Ensuite, installez le plugin GitFlow. Voici quelques options :
 
-Sur macOS :
+### Sur macOS :
 
 - Utilisez Homebrew :
 
@@ -29,13 +35,13 @@ Ou avec Macports :
 port install git-flow-avh
 ```
 
-Sur Windows :
+### Sur Windows :
 
 - Utilisez [GitFlow pour Windows](https://github.com/nvie/gitflow/wiki/Windows)
 
 - Utilisez GitFlow pour [Windows avec Git Bash](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Gitflow-Windows-Install-Git-Flow-Installation)
 
-Sur Linux :
+### Sur Linux :
 
 - Utilisez votre gestionnaire de paquets yum install
 
