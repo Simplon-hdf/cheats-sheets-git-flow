@@ -12,7 +12,7 @@ Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et Gi
 
 ---
 
-Après avoir [installé](/git/02-install/install.md) Git sur son terminal et fait sa configuration, Alex créer un dossier "site-photo", dans lequel il génère un _repositerie_ local Git grace à la commande:
+Après avoir [installé](/git/02-install/install.md) Git sur son terminal et fait sa configuration, Alex créer un dossier "site-photo", dans lequel il génère un _repo_ local Git grace à la commande:
 
 ```
 git init
@@ -133,7 +133,7 @@ git switch branch main
 git merge menu
 ```
 
-Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposés des changements.
+Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.
 
 Le message l'informe où trouver le conflit. Béa n'a qu'à se rendre dans le fichier affecté et corriger le conflit, puis **commit** la correction.
 
@@ -163,6 +163,6 @@ Si elle actualise le _repo_ GitHub, le site, détectant des changements entre so
 
 Elle remplit le formulaire de _Pull Request_ en renseignant le changement qu'elle a réalisée et en vérifiant qu'aucun conflit n'est détécté, puis l'envoie à Alex.
 
-Alex, lui, peut désormais voir le **pull request** de Béa, et vérifier les changements qu'elle a réalisée. C'est à lui de **review** le code de Béa, et de choisir s'il l'accepte et l'intègre au sien, s'il pose des **issues** pour qu'elle modifie des points de son code, ou s'il le refuse.
+Alex, lui, peut désormais voir le **pull request** de Béa, et vérifier les changements qu'elle a réalisé. C'est à lui de **review** le code de Béa, et de choisir s'il l'accepte et l'intègre au sien, s'il pose des **issues** pour qu'elle modifie des points de son code, ou s'il le refuse.
 
 Il peuvent de cette façon travailler sur différentes features en parrallèle, jusqu'à ce que leur site soit "terminé".
