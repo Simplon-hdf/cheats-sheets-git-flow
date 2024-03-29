@@ -57,7 +57,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow init</code></td>
-            <td>Initialise le dossier .gitflow dans le depo local et déplace l'utilisateur sur la branche develop</td>
+            <td>Initialise le dossier .gitflow dans le repo courant et déplace l'utilisateur sur la branche develop</td>
             <td></td>
         </tr>
         <tr>
