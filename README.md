@@ -36,12 +36,12 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git init</code></td>
-            <td>Initialise le dossier courant en depot Git local</td>
+            <td>Initialise le dossier courant en dépôt Git local</td>
             <td></td>
         </tr>
          <tr>
             <td align="right"><code>git clone [url]</code></td>
-            <td>Récupère l'entièreté d'un dépot distant via URL</td>
+            <td>Récupère l'entièreté d'un dépôt distant via URL</td>
             <td><code>git clone git@github.com:Simplon-hdf/cheats-sheets-git-flow.git</code></td>
         </tr>
         <tr>
@@ -58,7 +58,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git reset [fichier]</code></td>
-            <td>Enlève un fichier du staging tout en gardant les changement dans le working directory</td>
+            <td>Enlève un fichier du staging tout en gardant les changements dans le working directory</td>
             <td><code>git reset exemple.md</code></td>
         </tr>
          <tr>
@@ -86,7 +86,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git branch -av</code></td>
-            <td>Liste les branches. Un * apparaitra à coté de la branche actuelle</td>
+            <td>Liste les branches. Un * apparaîtra à côté de la branche actuelle</td>
             <td></td>
         </tr>
         <tr>
@@ -119,7 +119,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git log</code></td>
-            <td>Affiche l'historique commits</td>
+            <td>Affiche l'historique des commits</td>
             <td></td>
         </tr>
         <tr>
@@ -162,7 +162,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git push [remote] [branche]</code></td>
-            <td>Poussant ses modifications sur la branche au repo distant</td>
+            <td>Pousse les modifications de la branche au repo distant</td>
             <td><code>git push origin main</code></td>
         </tr>
         <tr>
@@ -175,7 +175,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git rebase [branche]</code></td>
-            <td>Réécrit l'historique des commit de la branche actuelle vers la branche spécifiée</td>
+            <td>Réécrit l'historique des commits de la branche actuelle vers la branche spécifiée</td>
             <td><code>git rebase main</code></td>
         </tr>
         <tr>
