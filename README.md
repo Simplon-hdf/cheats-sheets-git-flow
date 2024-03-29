@@ -20,7 +20,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
     <li><a href="./convention-commit/convention.md">Convention de commit</a></li>
 </ul>
 
-## Cheat sheet
+## Cheat Sheet
 
 <table>
     <thead>
@@ -35,11 +35,11 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git init</code></td>
-            <td>Initialise le dossier courant en depot Git local</td>
+            <td>Initialise le dossier courant en depôt Git local</td>
         </tr>
          <tr>
             <td align="right"><code>git clone [url]</code></td>
-            <td>Récupère l'entièreté d'un dépot distant via URL</td>
+            <td>Récupère l'entièreté d'un dépôt distant via URL</td>
         </tr>
         <tr>
         <tr>
@@ -54,7 +54,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git reset [fichier]</code></td>
-            <td>Enlève un fichier du staging tout en gardant les changement dans le working directory</td>
+            <td>Enlève un fichier du staging tout en gardant les changements dans le working directory</td>
         </tr>
          <tr>
             <td align="right"><code>git diff</code></td>
@@ -66,7 +66,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git diff [branche locale] [branche distante]</code></td>
-            <td>Compare les différences entre une brancge locale et distante</td>
+            <td>Compare les différences entre une branche locale et distante</td>
         </tr>
         <tr>
             <td align="right"><code>git commit -m [message]</code></td>
