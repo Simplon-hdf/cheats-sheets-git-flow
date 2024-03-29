@@ -20,7 +20,7 @@ git init
 
 Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).
 
-![cleSSHAlex](https://github.com/AlexPh0tograph/site-photo/blob/main/img/01SSH.jpg)
+![cleSSHAlex](/images/03-scenario/01SSH.jpg)
 
 Pour faire ça, avec le dossier courant ouvert dans le Terminal, il inscrit la commande:
 
@@ -34,7 +34,7 @@ Il vérifie ensuite que la connection est bien établie avec:
 git remote -v
 ```
 
-![remoteCorrect](https://github.com/AlexPh0tograph/site-photo/blob/main/img/02REMOTE.jpg)
+![remoteCorrect](/images/03-scenario/02REMOTE.jpg)
 
 Il crée un fichier README.md dans le _repository_ qu'il rédige pour communiquer les tenants de son projets. Avec la commande:
 
@@ -42,8 +42,8 @@ Il crée un fichier README.md dans le _repository_ qu'il rédige pour communique
 git status
 ```
 
-il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est pas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
-![untracked](https://github.com/AlexPh0tograph/site-photo/blob/main/img/03UNTRACKED.jpg)
+Il vérifie l'état de son _working directory_ et de la zone de _staging_. Il voit ainsi que son fichier README.md n'est pas tracké, et que ses changements ne sont pas mis dans la zone de _staging_.  
+![untracked](/images/03-scenario/03UNTRACKED.jpg)
 
 Il règle ça avec la commande:
 
@@ -53,7 +53,7 @@ git add README.md
 
 Le fichier est désormais dans le _staging_, Alex peut verifier ça en remandant un **git status**,
 
-<!-- sc gst now added -->
+![trckedfiles](/images/03-scenario/04TRACKED.jpg)
 
 > [!TIP] > **gst** est un alias de **git status**, avec 7 caractères en moins à taper !
 
@@ -65,16 +65,16 @@ git commit -m "docs: created README.md and wrote its contents"
 
 La commande inscrit ainsi dans l'historique du _repository_ git que Alex à crée et modifié le fichier README.md à la racine du _repository_ "site-photo".
 
-A souhaite maintenant porter ces changements, et l'état actuel de son _repo_ local vers son _repo_ distant GitHub. En utilisant:
+A souhaite maintenant porter ces changements, et l'état actuel de son _repo_ local vers son _repo_ distant GitHub. Il utilise:
 
 ```
 git push origin main
 ```
 
-il "pousse" l'état du projet vers le _repo_ distant défini comme _origin_, décrit par l'historique des modifications incrit par chaque commit (dans ce cas, un seul commit, contenant comme modifications la création d'un fichier et le changement de son contenu), sur la branche _main_.  
+Il "pousse" l'état du projet vers le _repo_ distant défini comme _origin_, décrit par l'historique des modifications incrit par chaque commit (dans ce cas, un seul commit, contenant comme modifications la création d'un fichier et le changement de son contenu), sur la branche _main_.  
 Sur GitHub, s'il actualise maintenant la page du _repo_ distant, il peut voir que le fichier README.md est bien présent.
 
-<!-- sc github updaté -->
+![pushed](/images/03-scenario/05PUSH.jpg)
 
 Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le repo à Béa facilement, en lui transmettant le lien du _repo_ GitHub.
 
@@ -84,7 +84,7 @@ Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut main
 
 Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé.
 
-<!-- sc GitHub fork et clé SSH -->
+![fork](/images/03-scenario/06BEAFORK.jpg)
 
 Dans son Terminal sur son ordinateur, elle tape:
 
@@ -135,8 +135,6 @@ git merge menu
 
 Le terminal l'informe d'un conflit dans un des fichiers, car elle et Alex y ont tout les deux apposé des changements.
 
-<!--  sc conflict -->
-
 Le message l'informe d'où trouver le conflit. Béa n'a qu'a se rendre dans le fichier affecté et corriger le conflit, puis **commit** la correction.
 
 ```
@@ -158,16 +156,13 @@ Elle n'a plus qu'à **push** ses changements sur son _repo_ distant.
 git push origin main
 ```
 
-Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_.
+Si elle actualise le _repo_ GitHub, le site, détectant des changements entre son **fork** et le _repo_ d'Alex, il lui propose de faire un **pull request**, pour proposer à Alex de recupérer le menu qu'elle à créé et de l'ajouter à son _repo_. Elle clique sur le bouton **Contribute** pour envoyer ses changements.
 
-<!--- sc pull request -->
+![Contribute](/images/03-scenario/07CONTRIBUTE.jpg)
+![SendPR](/images/03-scenario/07CONTRIBUTE2.jpg)
 
-Elle remplit le formulaire de Pull Request en renseignant le changement qu'elle à réalisé, puis l'envoie à Alex.
+Elle remplit le formulaire de Pull Request en renseignant le changement qu'elle à réalisé et en vérifiant qu'aucun conflit n'est détécté, puis l'envoie à Alex.
 
 Alex, lui, peut désormais voir le **pull request** de Béa, et vérifier les changements qu'elle à réalisé. C'est à lui de **review** le code de Béa, et de choisir s'il l'accepte et l'intègre au sien, s'il pose des **issues** pour qu'elle modifie des points de son code, ou s'il le refuse.
 
 Il peuvent de cette façon travailler sur différentes features en parrallèle, jusqu'à ce que leur site soit "terminé".
-
-<!----------- REF
-[installé](https://github.com/Simplon-hdf/cheats-sheets-git-flow/blob/develop/01-install/Install.md)
------------>
