@@ -147,7 +147,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git remote add [remote] [url]</code></td>
-            <td>Ajoute une nouvelle remote au nom donné</td>
+            <td>Permet de créer une connexion avec un dépôt distant sous un raccourci</td>
             <td><code>git remote add origin git@github.com:Simplon-hdf/cheats-sheets-git-flow.git</code></td>
         </tr>
         <tr>
@@ -162,7 +162,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git push [remote] [branche]</code></td>
-            <td>Pousse les modifications de la branche au repo distant</td>
+            <td>Pousse les commits d'une branche locale vers un dépôt distant</td>
             <td><code>git push origin main</code></td>
         </tr>
         <tr>
