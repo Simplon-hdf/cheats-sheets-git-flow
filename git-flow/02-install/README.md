@@ -10,15 +10,15 @@
 
 [MacOS](#sur-macos)  
 [Windows](#sur-windows)  
-[Linux](#sur-linux)  
+[Linux](#sur-linux)
 
 ## Installation
 
-- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install/install.md">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
+- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install/README.md">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
 
-````
+```
 git version
-````
+```
 
 - Ensuite, installez le plugin GitFlow. Voici quelques options :
 
