@@ -22,3 +22,11 @@ Les trois objectifs clés de Git sont les suivants :
 En résumé, Git est un outil puissant pour gérer l’historique des versions de votre code, collaborer avec d’autres développeurs et suivre les modifications au fil du temps.
 
 Que vous soyez un débutant ou un expert, Git est essentiel pour tout projet de développement logiciel
+
+- plus d'informations complémentaires sur git et giflow :
+
+https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-rssnx5gejir56aw
+
+- une petite video de 5 min pour comprendre git...
+
+https://youtu.be/gGKZLfPYORs?si=5ErR7YGKXLe5HRxX

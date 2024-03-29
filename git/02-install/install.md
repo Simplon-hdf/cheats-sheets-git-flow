@@ -42,11 +42,3 @@ Windows :
 Vous pouvez également utiliser le paquet Chocolatey Git pour une installation automatisée.
 Une autre option est d’installer GitHub for Windows, qui inclut une version en ligne de commande avec une interface graphique.
 N’hésitez pas à choisir la méthode qui convient le mieux à votre système et à vos préférences ! 🚀
-
-- plus d'informations complémentaires sur git et giflow :
-
-https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-rssnx5gejir56aw
-
-- une petite video de 5 min pour comprendre git...
-
-https://youtu.be/gGKZLfPYORs?si=5ErR7YGKXLe5HRxX
