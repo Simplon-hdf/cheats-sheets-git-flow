@@ -1,25 +1,41 @@
 <p align="center"><img width="600"src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png"/><p>
 
-# À propos de Gitflow
+# À propos de Git-Flow
 
-Git-Flow est un modèle de _branching_ alternatif rattaché à Git, cad qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow different.
+Git-Flow est une extention développée par Vincent Driessen en 2010.  
+Elle permet de gérer le _versionning_ de projets en collaboration, et de fluidifier le _workflow_.  
 
-## Differences avec le Workflow Git
+## Comment fonctionne Git Flow
 
-Git-Flow est optimisé pour un dévelopement sur modèle de "release", où des changements multiples sont déployés par packs périodiques sur l'application.
+Git-flow definit des préfixes de branches appliqués automatiquement lors de la création de branches, et ces préfixes sont utilisés par l'extention pour définir les directions des _merges_.
 
-Git-Flow crée automatiquement une branche **develop** qui sert de branche de travail. La branche **main** reste ainsi stable pour l'utilisateur malgré les changements sur lesquels les devs travaillent.
+Concrètement, elle utilise une branche **main** réservée aux versions "terminées" de l'application, une branche de travail **develop**, des branches **features** et **hotfix** pour travailler sur les fonctionalités et bugs en isolation, et des branches **release** pour préparer les nouvelles versions avant déployement.  
 
-![main&dev](/images/git-flow-1.png)
+Les **features** push vers la **develop**, la **develop** vers la branche **release** qui à son tour push sur la branche **main**, et les **hotfix** push sur la **main** et **develop** en "même temps".
 
-A partir de cette branche **develop**, les devs peuvent créer en local des branches de **feature** pour travailler sur chaque nouvelle fonctionnalité en parrallèle. Chaque **feature** terminée et validée est ensuite merge sur la branche **develop**.
+![schemaDirectionsPush](/images/git-flow-4.png)
 
-![feature](/images/git-flow-2.png)
+## Les commandes de Git Flow
 
-Pour pouvoir modifier la branche **main** auquel l'utilisateur à accès, les devs passent par une branche **release** qui communique les changements de la branche **develop**, et les merge à la **main**.
+Les commandes de Git Flow lancent automatiquement une suite de commande Git, permettant un gain de temps pour l'utilisateur.  
 
-![release](/images/git-flow-3.png)
+Par exemple, pour un merge d'une branche, au lieu d'entrer:
 
-Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche **main** permettent de les résoudre, et ces changements s'appliquent simultanément aux la branche **main** et **develop**. Ainsi, l'apparition de bugs n'interromp pas le travail des different collaborateurs.
+``` 
+git checkout develop
+git merge feature/header
+git branch -D feature/header
+```
 
-![hotfix](/images/git-flow-4.png)
+Il suffit à la place d'entrer:
+
+``` 
+git flow feature finish header
+```
+
+## Les avantages de Git-flow
+
+    - Git Flow crée une structure et organisation définie pour tous les collaborateurs d'un projet. 
+    - Le travail de chacun peut être fait en parrallèle, en un même utilisateur peut travailler sur plusieurs fonctionalités en limitant le désordre et conflits dans son local.  
+    - Les fonctionnalités _in progress_ peuvent être partagées facilement sans être _merge_ sur l'espace de travail, permettant de créer des branches avec plus de longévité, et de conserver un espace de travail au plus propre.  
+    - Les _hotfix_ sont simple à récupérer et ne freinent donc pas le travail sur les fonctionalités.
