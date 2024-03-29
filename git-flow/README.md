@@ -3,7 +3,7 @@
 # Git-Flow
 ___
 
-Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow different.
+Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow différent.
 
 ## Table des matières
 
@@ -75,7 +75,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow hotfix start [branche]</code></td>
-            <td>Crée une branche de déboggage et en fait branche courante</td>
+            <td>Crée une branche de déboggage et en fait la branche courante</td>
             <td align="right"><code>git flow hotfix start fix-api-url</code></td>
         </tr>
         <tr>
