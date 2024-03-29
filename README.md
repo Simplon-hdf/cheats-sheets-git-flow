@@ -58,7 +58,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
          <tr>
             <td align="right"><code>git diff</code></td>
-            <td>Différence des changements pas en staging</td>
+            <td>Différence des changements hors staging</td>
         </tr>
         <tr>
             <td align="right"><code>git diff --staged</code></td>
@@ -77,7 +77,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git branch -av</code></td>
-            <td>Liste vos branches. Un * apparaitra à coté de la branche actuelle</td>
+            <td>Liste vos branches. Un * apparaîtra à côté de la branche actuelle</td>
         </tr>
         <tr>
             <td align="right"><code>git branch [branche]</code></td>
@@ -104,7 +104,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git log</code></td>
-            <td>Affiche l'historique commits</td>
+            <td>Affiche l'historique des commits</td>
         </tr>
         <tr>
             <td align="right"><code>git log -p [fichier]</code></td>
@@ -139,7 +139,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git push [remote] [branche]</code></td>
-            <td>Poussant ses modifications sur la branche au repo distant</td>
+            <td>Pousse les modifications de la branche vers le repo distant</td>
         </tr>
         <tr>
             <th colspan="3" align="left">Merge & Rebase</th>
@@ -150,7 +150,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git rebase [branche]</code></td>
-            <td>Réécrit l'historique des commit de la branche actuelle vers la branche spécifiée</td>
+            <td>Réécrit l'historique des commits de la branche actuelle vers la branche spécifiée</td>
         </tr>
         <tr>
             <td align="right"><code>git rebase --abort</code></td>
@@ -173,7 +173,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git checkout HEAD [fichier]</code></td>
-            <td>Restaure un fichier a son état HEAD</td>
+            <td>Restaure un fichier à son état HEAD</td>
         </tr>
         <tr>
             <td align="right"><code>git revert [commit]</code></td>
