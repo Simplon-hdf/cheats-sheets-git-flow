@@ -7,7 +7,7 @@ Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dir
 
 ## Table des matières
 
-[Workflow Git Flow](#differences-avec-le-workflow-git)
+[Workflow Git Flow](#differences-avec-le-workflow-git)  
  [Cheat Sheet](#cheat-sheet)
 
 ## Sommaire
