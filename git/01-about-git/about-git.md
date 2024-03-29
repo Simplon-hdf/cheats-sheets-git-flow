@@ -23,7 +23,7 @@ En résumé, Git est un outil puissant pour gérer l’historique des versions d
 
 Que vous soyez un débutant ou un expert, Git est essentiel pour tout projet de développement logiciel
 
-- Plus d'informations complémentaires sur Git et GidFlow :
+- Plus d'informations complémentaires sur Git et GitFlow :
 
 https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-rssnx5gejir56aw
 
