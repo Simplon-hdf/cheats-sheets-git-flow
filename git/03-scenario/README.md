@@ -12,7 +12,7 @@ Alex veut créer un site pour poster ses photos. Il décide d'utiliser Git et Gi
 
 ---
 
-Après avoir [installé](/git/02-install/README.md) Git sur son terminal et fait sa configuration, Alex créer un dossier "site-photo", dans lequel il génère un _dépôt_ local Git grace à la commande:
+Après avoir [installé](/git/02-install) Git sur son terminal et fait sa configuration, Alex créer un dossier "site-photo", dans lequel il génère un _dépôt_ local Git grace à la commande:
 
 ```
 git init

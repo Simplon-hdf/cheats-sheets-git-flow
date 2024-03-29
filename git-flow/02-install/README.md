@@ -14,7 +14,7 @@
 
 ## Installation
 
-- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install/README.md">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
+- Pour installer GitFlow, vous devez d’abord vous assurer que Git est déjà <a href="../../git/02-install">installé</a> sur votre système. Pour vous assurez de la bonne version de Git tapez la commande suivante :
 
 ```
 git version
