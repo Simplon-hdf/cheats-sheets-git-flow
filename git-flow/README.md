@@ -4,7 +4,7 @@
 
 ---
 
-Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow different.
+Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow différent.
 
 ## Table des matières
 
