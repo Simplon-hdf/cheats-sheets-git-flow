@@ -199,7 +199,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         <tr>
             <td align="right"><code>git reset --hard HEAD</code></td>
             <td>Réinitialise l'index et le répertoire de travail au commit référencé par HEAD</td>
-            <td></td>
+            <td><code>git reset --hard @~1</code></td>
         </tr>
         <tr>
             <td align="right"><code>git checkout HEAD [fichier]</code></td>

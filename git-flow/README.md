@@ -59,7 +59,7 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
         </tr>
         <tr>
             <td align="right"><code>git flow init</code></td>
-            <td>Initialise un dossier .git vide, dans le repo courant et déplace l'utilisateur sur la branche develop</td>
+            <td>Initialise un dossier .git vide, dans le dépôt courant et déplace l'utilisateur sur la branche develop</td>
             <td></td>
         </tr>
         <tr>
@@ -99,12 +99,12 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
         </tr>
         <tr>
             <td align="right"><code>git flow feature publish [branche]</code></td>
-            <td>Push la branche feature sur le repo distant</td>
+            <td>Push la branche feature sur le dépôt distant</td>
             <td align="right"><code>git flow feature publish header</code></td>
         </tr>
         <tr>
             <td align="right"><code>git flow feature pull [remote] [branche]</code></td>
-            <td>Récupère une branche d'un repo distant</td>
+            <td>Récupère une branche d'un dépôt distant</td>
             <td align="right"><code>git flow feature pull origin menu</code></td>
         </tr>
     </tbody>
