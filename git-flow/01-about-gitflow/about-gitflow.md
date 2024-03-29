@@ -1,6 +1,6 @@
 <p align="center"><img width="600"src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png"/><p>
 
-# À propos de Git-Flow
+# À propos de Git Flow
 
 Git-Flow est une extention développée par Vincent Driessen en 2010.  
 Elle permet de gérer le _versionning_ de projets en collaboration, et de fluidifier le _workflow_.  
