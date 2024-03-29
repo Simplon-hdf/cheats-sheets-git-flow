@@ -72,17 +72,17 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
         </tr>
         <tr>
             <td align="right"><code>git flow feature finish [branche]</code></td>
-            <td>Merge la branche de feature sur la branche develop, et supprime la branche feature</td>
+            <td>Fusionne la branche de feature sur la branche develop, et supprime la branche feature</td>
             <td align="right"><code>git flow feature finish header</code></td>
         </tr>
         <tr>
             <td align="right"><code>git flow hotfix start [branche]</code></td>
-            <td>Crée une branche de déboggage et en fait branche courante</td>
+            <td>Crée une branche de déboggage et en fait la branche courante</td>
             <td align="right"><code>git flow hotfix start fix-api-url</code></td>
         </tr>
         <tr>
             <td align="right"><code>git flow hotfix finish [branche]</code></td>
-            <td>Merge la branche hotfix à la branche main et develop, et supprime la branche hotfix</td>
+            <td>Fusionne la branche hotfix à la branche main et develop, et supprime la branche hotfix</td>
             <td align="right"><code>git flow hotfix finish fix-api-url</code></url>
         </tr>
         <tr>
@@ -91,7 +91,7 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
             <td>git flow release start 1.0.0</td>
             <tr>
                 <td align="right"><code>git flow release finish [numero de version]</code></td>
-                <td>Merge la branche release sur la branche main et supprime la branche release </td>
+                <td>Fusionne la branche release sur la branche main et supprime la branche release </td>
                 <td align="right"><code>git flow release finish 1.0.0</code></td>
             </tr>
         </tr>
@@ -99,7 +99,7 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
         </tr>
         <tr>
             <td align="right"><code>git flow feature publish [branche]</code></td>
-            <td>Push la branche feature sur le dépôt distant</td>
+            <td>Pousse la branche feature sur le dépôt distant</td>
             <td align="right"><code>git flow feature publish header</code></td>
         </tr>
         <tr>
