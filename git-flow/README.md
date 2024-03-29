@@ -1,7 +1,8 @@
 <p align="center"><img width="600"src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png"/><p>
 
 # Git-Flow
-___
+
+---
 
 Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow différent.
 
@@ -19,7 +20,8 @@ Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dir
 </ul>
 
 ## Differences avec le Workflow Git
-___
+
+---
 
 Git-Flow est optimisé pour un dévelopement sur modèle de "release", où des changements multiples sont déployés par packs périodiques sur l'application.
 
@@ -39,9 +41,9 @@ Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche *
 
 ![hotfix](/images/git-flow-4.png)
 
-
 ## Cheat Sheet
-___
+
+---
 
 <table>
     <thead>
@@ -57,7 +59,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow init</code></td>
-            <td>Initialise le dossier .gitflow dans le repo courant et déplace l'utilisateur sur la branche develop</td>
+            <td>Initialise un dossier .git vide, dans le dépôt courant et déplace l'utilisateur sur la branche develop</td>
             <td></td>
         </tr>
         <tr>
@@ -70,7 +72,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow feature finish [branche]</code></td>
-            <td>Merge la branche de feature sur la branche develop, et supprime la branche feature</td>
+            <td>Fusionne la branche de feature sur la branche develop, et supprime la branche feature</td>
             <td align="right"><code>git flow feature finish header</code></td>
         </tr>
         <tr>
@@ -80,7 +82,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow hotfix finish [branche]</code></td>
-            <td>Merge la branche hotfix à la branche main et develop, et supprime la branche hotfix</td>
+            <td>Fusionne la branche hotfix à la branche main et develop, et supprime la branche hotfix</td>
             <td align="right"><code>git flow hotfix finish fix-api-url</code></url>
         </tr>
         <tr>
@@ -89,7 +91,7 @@ ___
             <td>git flow release start 1.0.0</td>
             <tr>
                 <td align="right"><code>git flow release finish [numero de version]</code></td>
-                <td>Merge la branche release sur la branche main et supprime la branche release </td>
+                <td>Fusionne la branche release sur la branche main et supprime la branche release </td>
                 <td align="right"><code>git flow release finish 1.0.0</code></td>
             </tr>
         </tr>
@@ -97,12 +99,12 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow feature publish [branche]</code></td>
-            <td>Push la branche feature sur le repo distant</td>
+            <td>Pousse la branche feature sur le dépôt distant</td>
             <td align="right"><code>git flow feature publish header</code></td>
         </tr>
         <tr>
             <td align="right"><code>git flow feature pull [remote] [branche]</code></td>
-            <td>Récupère une branche d'un repo distant</td>
+            <td>Récupère une branche d'un dépôt distant</td>
             <td align="right"><code>git flow feature pull origin menu</code></td>
         </tr>
     </tbody>
