@@ -82,7 +82,7 @@ Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut main
 
 ---
 
-Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère clé SSH du Fork qu'elle à créé.
+Après avoir reçu le lien du _repo_ distant GitHub, Béa fait un Fork du _repo_ et récupère la clé SSH du Fork qu'elle a créé.
 
 ![fork](/images/03-scenario/06BEAFORK.jpg)
 
