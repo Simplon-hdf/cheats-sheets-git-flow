@@ -223,7 +223,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git reset --keep [commit]</code></td>
-            <td>Déplace la branche tout en conservant les modifications en dehors de l'index/td>
+            <td>Déplace la branche tout en conservant les modifications en dehors de l'index </td>
             <td><code>git reset --keep 8d6fe82</code></td>
         </tr>
     </tbody>
