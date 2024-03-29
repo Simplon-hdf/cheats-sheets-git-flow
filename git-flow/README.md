@@ -3,13 +3,18 @@
 # Git-Flow
 ___
 
-Git-Flow est un modèle de _branching_ alternatif rattaché à Git, cad qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow different.
+Git-Flow est un modèle de _branching_ alternatif rattaché à Git, c'est à dire qu'il offre des commandes alternatives à celle de Git pour créer, modifier, et merge des branches, permettant un workflow different.
+
+## Table des matières
+
+[Workflow Git Flow](#differences-avec-le-workflow-git)  
+[Cheat Sheet](#cheat-sheet)
 
 ## Sommaire
 
-<ul>    
+<ul>  
+    <li><a href="./02-install/install.md">Installation</a></li>  
     <li><a href="./01-about-gitflow/about-gitflow.md">À propos de Git flow</a></li>
-    <li><a href="./02-install/install.md">Installation</a></li>
     <li><a href="./03-scenario/scenario.md">Utiliser Git flow</a></li>
 </ul>
 
@@ -52,7 +57,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow init</code></td>
-            <td>Initialise le dossier .gitflow dans le depo local et déplace l'utilisateur sur la branche develop</td>
+            <td>Initialise le dossier .gitflow dans le repo courant et déplace l'utilisateur sur la branche develop</td>
             <td></td>
         </tr>
         <tr>
