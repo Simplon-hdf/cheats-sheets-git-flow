@@ -18,7 +18,7 @@ Après avoir [installé](/git/02-install/install.md) Git sur son terminal et fai
 git init
 ```
 
-Dans GitHub, il crée un repo distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).
+Dans GitHub, il crée un dépôt distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son répo local (sur son ordinateur) et distant (sur GitHub).
 
 ![cleSSHAlex](/images/03-scenario/01SSH.jpg)
 
@@ -76,7 +76,7 @@ Sur GitHub, s'il actualise maintenant la page du _repo_ distant, il peut voir qu
 
 ![pushed](/images/03-scenario/05PUSH.jpg)
 
-Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le repo à Béa facilement, en lui transmettant le lien du _repo_ GitHub.
+Alex continue de travailler ainsi sur son site. Une fois satisfait, il peut maintenant partager le dépôt à Béa facilement, en lui transmettant le lien du _repo_ GitHub.
 
 ### Récupération du projet par un collaborateur
 
