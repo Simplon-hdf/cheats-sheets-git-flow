@@ -32,11 +32,11 @@ Git est un système de contrôle de version qui trace les changements dans le co
     </thead>
     <tbody>
         <tr>
-            <th colspan="3" align="left">Setup & Init</th>
+            <th colspan="3" align="left"> Mise en place & Initialisation</th>
         </tr>
         <tr>
             <td align="right"><code>git init</code></td>
-            <td>Initialise le dossier courant en dépôt Git local</td>
+            <td>Initialise un dépôt Git dans le dossier courant</td>
             <td></td>
         </tr>
          <tr>
@@ -45,30 +45,30 @@ Git est un système de contrôle de version qui trace les changements dans le co
             <td><code>git clone git@github.com:Simplon-hdf/cheats-sheets-git-flow.git</code></td>
         </tr>
         <tr>
-            <th colspan="3" align="left">Staging</th>
+            <th colspan="3" align="left">Index</th>
         </tr>
             <td align="right"><code>git status</code></td>
-            <td>Affiche les fichiers modifiés dans le working directory</td>
+            <td>Affiche les fichiers modifiés dans le répertoire de travail</td>
             <td></td>
         </tr>
         <tr>
             <td align="right"><code>git add [fichier]</code></td>
-            <td>Ajoute un fichier au prochain commit (en staging)</td>
+            <td>Déplace un fichier dans la zone de stage</td>
             <td><code>git add exemple.md</code></td>
         </tr>
         <tr>
             <td align="right"><code>git reset [fichier]</code></td>
-            <td>Enlève un fichier du staging tout en gardant les changements dans le working directory</td>
+            <td>Enlève un fichier de l'index tout en gardant les changements dans le répertoire de travail</td>
             <td><code>git reset exemple.md</code></td>
         </tr>
          <tr>
             <td align="right"><code>git diff</code></td>
-            <td>Différence des changements pas en staging</td>
+            <td>Différence des changements en dehors de l'index</td>
             <td></td>
         </tr>
         <tr>
             <td align="right"><code>git diff --staged</code></td>
-            <td>Différence du staging mais pas encore commit</td>
+            <td>Différence entre l'index et le dernier commit</td>
             <td></td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git commit -m [message]</code></td>
-            <td>Effectue le commit contenant les fichiers en staging</td>
+            <td>Effectue le commit contenant les fichiers dans l'index</td>
             <td><code>git commit -m "Renamed exemple.md"</code></td>
         </tr>
         <tr>
@@ -106,7 +106,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git checkout --track</code></td>
-            <td>Créer une nouvelle branche trackée à partir d'une branche distante</td>
+            <td>Créer une nouvelle branche locale à partir d'une branche distante, et la suivre</td>
             <td></td>
         <tr>
             <td align="right"><code>git tag [tag-name]</code></td>
@@ -152,12 +152,12 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git fetch [remote]</code></td>
-            <td>Récupère toutes les modifications de la remote sans merge les changements</td>
+            <td>Récupère toutes les modifications de la remote sans fusionner les changements</td>
             <td><code>git fetch origin</code></td>
         </tr>
         <tr>
             <td align="right"><code>git pull [remote] [branche]</code></td>
-            <td>Récupère les modifications de la branche, et les merge</td>
+            <td>Récupère les modifications de la branche, et les fusionne</td>
             <td><code>git pull origin main</code></td>
         </tr>
         <tr>
@@ -166,16 +166,16 @@ Git est un système de contrôle de version qui trace les changements dans le co
             <td><code>git push origin main</code></td>
         </tr>
         <tr>
-            <th colspan="3" align="left">Merge & Rebase</th>
+            <th colspan="3" align="left">Fusionner & Rebaser</th>
         </tr>
         <tr>
             <td align="right"><code>git merge [branche]</code></td>
-            <td>Merge la branche dans la branche actuelle</td>
+            <td>Fusionne la branche spécifiée avec la branche actuelle</td>
             <td><code>git merge main</code></td>
         </tr>
         <tr>
             <td align="right"><code>git rebase [branche]</code></td>
-            <td>Réécrit l'historique des commits de la branche actuelle vers la branche spécifiée</td>
+            <td>Réapplique l'historique des commits de la branche actuelle au dessus de la branche spécifiée</td>
             <td><code>git rebase main</code></td>
         </tr>
         <tr>
@@ -190,20 +190,20 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git mergetool</code></td>
-            <td>Ouvre un outil de merge pour résoudre les conflits</td>
+            <td>Ouvre un outil de fusion pour résoudre les conflits</td>
             <td></td>
         </tr>
         <tr>
             <th colspan="3" align="left"    >Rétablir/Annuler</th>
         </tr>
         <tr>
-            <td align="right"><code>git reset --hard</code></td>
-            <td>Réinitialise le staging et le working directory à HEAD</td>
+            <td align="right"><code>git reset --hard HEAD</code></td>
+            <td>Réinitialise l'index et le répertoire de travail au commit référencé par HEAD</td>
             <td></td>
         </tr>
         <tr>
             <td align="right"><code>git checkout HEAD [fichier]</code></td>
-            <td>Restaure un fichier a son état HEAD</td>
+            <td>Restaure un fichier spécifique dans le répertoire de travail au dernier commit (HEAD)</td>
             <td><code>git checkout HEAD exemple.md</code></td>
         </tr>
         <tr>
@@ -213,7 +213,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git reset --hard [commit]</code></td>
-            <td>Réinitialise le staging et le working directory au commit spécifié</td>
+            <td>Réinitialise l'index et le répertoire de travail au commit spécifié</td>
             <td><code>git reset --hard 8d6fe82</code></td>
         </tr>
         <tr>
@@ -223,7 +223,7 @@ Git est un système de contrôle de version qui trace les changements dans le co
         </tr>
         <tr>
             <td align="right"><code>git reset --keep [commit]</code></td>
-            <td>Déplace la branche tout en conservant les modifications pas en staging</td>
+            <td>Déplace la branche tout en conservant les modifications en dehors de l'index/td>
             <td><code>git reset --keep 8d6fe82</code></td>
         </tr>
     </tbody>
