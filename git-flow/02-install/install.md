@@ -1,4 +1,4 @@
-## ![Logo gitflow](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png)
+<p align="center"><img width="600"src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png"/><p>
 
 ---
 
@@ -37,7 +37,11 @@ Sur Linux :
 - Utilisez votre gestionnaire de paquets yum install
 
 ```
-sudo yum install git-flow ou sudo apt-get install git-flow
+sudo yum install git-flow
+```
+
+```
+sudo apt-get install git-flow
 ```
 
 Initialisation :

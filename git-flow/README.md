@@ -1,10 +1,13 @@
+<p align="center"><img width="600"src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SK4JGjtWs9BsfGGXOrnnig.png"/><p>
+
 # Git-Flow
 
-## Table des matières
+## Index
 
 <ul>
     <li><a href="./02-install/install.md">Installation</a></li>
-    <li><a href="./03-scenario/scenario.md">Utiliser Git-Flow</a></li>
+    <li><a href="./01-about-gitflow/about-gitflow.md">À propos de Git flow</a></li>
+    <li><a href="./03-scenario/scenario.md">Utiliser Git flow</a></li>
 </ul>
 
 ## Cheat sheet
