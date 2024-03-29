@@ -27,20 +27,20 @@ Git-Flow crée automatiquement une branche **develop** qui sert de branche de tr
 
 ![main&dev](/images/git-flow-1.png)
 
-A partir de cette branche **develop**, les devs peuvent créer en local des branches de **feature** pour travailler sur chaque nouvelle fonctionnalité en parrallèle. Chaque **feature** terminée et validée est ensuite merge sur la branche **develop**.
+À partir de cette branche **develop**, les devs peuvent créer en local des branches de **feature** pour travailler sur chaque nouvelle fonctionnalité en parrallèle. Chaque **feature** terminée et validée est ensuite merge sur la branche **develop**.
 
 ![feature](/images/git-flow-2.png)
 
-Pour pouvoir modifier la branche **main** auquel l'utilisateur à accès, les devs passent par une branche **release** qui communique les changements de la branche **develop**, et les merge à la **main**.
+Pour pouvoir modifier la branche **main** auquel l'utilisateur a accès, les devs passent par une branche **release** qui communique les changements de la branche **develop**, et les merge à la **main**.
 
 ![release](/images/git-flow-3.png)
 
-Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche **main** permettent de les résoudre, et ces changements s'appliquent simultanément aux la branche **main** et **develop**. Ainsi, l'apparition de bugs n'interromp pas le travail des different collaborateurs.
+Lors d'une détection de bugs, les branches **hotfix**, naissant de la branche **main** permettent de les résoudre, et ces changements s'appliquent simultanément aux la branche **main** et **develop**. Ainsi, l'apparition de bugs n'interromp pas le travail des differents collaborateurs.
 
 ![hotfix](/images/git-flow-4.png)
 
 
-## Cheat sheet
+## Cheat Sheet
 ___
 
 <table>
@@ -85,7 +85,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow release start [numero de version]</code></td>
-            <td>Crée une nouvelle branche de release a partir de la branche develop</td>
+            <td>Crée une nouvelle branche de release à partir de la branche develop</td>
             <td>git flow release start 1.0.0</td>
             <tr>
                 <td align="right"><code>git flow release finish [numero de version]</code></td>
@@ -102,7 +102,7 @@ ___
         </tr>
         <tr>
             <td align="right"><code>git flow feature pull [remote] [branche]</code></td>
-            <td>Recupère une branche d'un repo distant</td>
+            <td>Récupère une branche d'un repo distant</td>
             <td align="right"><code>git flow feature pull origin menu</code></td>
         </tr>
     </tbody>
