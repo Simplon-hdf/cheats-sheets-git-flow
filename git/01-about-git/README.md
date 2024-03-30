@@ -25,7 +25,7 @@ Que vous soyez un débutant ou un expert, Git est essentiel pour tout projet de 
 
 - Plus d'informations complémentaires sur Git et GitFlow :
 
-https://gamma.app/docs/Quest-ce-que-Git-Flow--th2885p6wv1rnfv?mode=present#card-rssnx5gejir56aw
+https://gamma.app/docs/Copy-of-Quest-ce-que-Git-Flow--txs00tl14dxrz9c?mode=present#card-pqci129fpswk12n
 
 - Une petite vidéo de 5 minutes pour comprendre Git :
 
