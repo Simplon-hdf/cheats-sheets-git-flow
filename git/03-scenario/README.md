@@ -18,14 +18,14 @@ Après avoir [installé](/git/02-install) Git sur son terminal et fait sa config
 git init
 ```
 
-Dans GitHub, il crée un _dépôt_ distant vide du même nom, et en récupère la clé SSH afin d'établir le lien entre son _dépôt_ local (sur son ordinateur) et distant (sur GitHub).
+Dans GitHub, il crée un _dépôt_ distant vide du même nom, et en récupère le lien SSH afin d'établir la liaison entre son _dépôt_ local (sur son ordinateur) et distant (sur GitHub).
 
 ![cleSSHAlex](/images/03-scenario/01SSH.jpg)
 
 Pour faire ça, avec le dossier courant ouvert dans le Terminal, il inscrit la commande:
 
 ```
-git remote add origin [cleSSH]
+git remote add origin [lienSSH]
 ```
 
 Il vérifie ensuite que la connection est bien établie avec:
