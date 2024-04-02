@@ -31,7 +31,6 @@ brew install git-flow-avh
 ```
 
 Ou avec Macports :
-
 ```
 port install git-flow-avh
 ```
